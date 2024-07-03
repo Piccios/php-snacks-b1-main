@@ -9,10 +9,10 @@ try {
     $membership = new Membership("Gold", 99.99);
     $premiumUser = new PremiumUser("Mario Rossi", "mario.rossi@example.com", $membership);
 
-    echo "Nome: " . $premiumUser->getName() . "\n";
-    echo "Email: " . $premiumUser->getEmail() . "\n";
-    echo "Livello Membership: " . $premiumUser->getMembership()->getLevel() . "\n";
-    echo "Prezzo Membership: " . $premiumUser->getMembership()->getPrice() . "\n";
+    echo "Nome: " . $premiumUser->getName() . "<br>";
+    echo "Email: " . $premiumUser->getEmail() . "<br>";
+    echo "Livello Membership: " . $premiumUser->getMembership()->getLevel() . "<br>";
+    echo "Prezzo Membership: " . $premiumUser->getMembership()->getPrice() . "<br>";
 } catch (Exception $err) {
     echo 'Errore: ' . $err->getMessage();
 }
